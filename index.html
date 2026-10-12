@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Australia on Screen</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Vega / Vega-Lite -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">AUSTRALIA ON SCREEN</a>
+
+      <div class="nav-links">
+        <a href="#change">Change</a>
+        <a href="#success">Success</a>
+        <a href="#world">World</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <header class="hero" id="top">
+    <div class="container hero-inner">
+      <p class="kicker">Australian Cinema · 1980–2019</p>
+      <h1>Australia<br>on Screen</h1>
+      <p class="hero-subtitle">
+        How Australian cinema changed — and found its place in the world.
+      </p>
+      <p class="hero-copy">
+        Explore four decades of Australian film through changing genres,
+        budgets, box-office performance, audience reception, production
+        companies and international connections.
+      </p>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- =======================
+         CHAPTER 1
+    ======================== -->
+    <section class="section light" id="change">
+      <div class="container">
+
+        <div class="chapter-header">
+          <span class="chapter-number">01</span>
+          <div>
+            <p class="kicker">Australian Cinema in Motion</p>
+            <h2>How has Australian cinema changed?</h2>
+            <p>
+              Begin with the changing number of films and the genres that
+              rose, fell and returned over time.
+            </p>
+          </div>
+        </div>
+
+
+        <article class="visual-row">
+          <div class="visual-copy">
+            <span class="visual-number">01</span>
+            <h3>A Cinema in Motion</h3>
+            <p>
+              The number of Australian films represented in the dataset
+              changes considerably from year to year.
+            </p>
+          </div>
+
+          <div class="visual-card">
+            <div id="vis1" class="visualisation"></div>
+          </div>
+        </article>
+
+
+        <article class="visual-row">
+          <div class="visual-copy">
+            <span class="visual-number">02</span>
+            <h3>Genres Rise, Fall and Return</h3>
+            <p>
+              Genre rankings reveal how different types of Australian films
+              moved in and out of prominence.
+            </p>
+          </div>
+
+          <div class="visual-card">
+            <div id="vis2" class="visualisation"></div>
+          </div>
+        </article>
+
+
+        <article class="visual-row">
+          <div class="visual-copy">
+            <span class="visual-number">03</span>
+            <h3>Changing Genres, Changing Fortunes</h3>
+            <p>
+              Median box-office gross shows that commercial fortunes differed
+              across both genre and era.
+            </p>
+          </div>
+
+          <div class="visual-card">
+            <div id="vis3" class="visualisation"></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- =======================
+         CHAPTER 2
+    ======================== -->
+    <section class="section warm" id="success">
+      <div class="container">
+
+        <div class="chapter-header">
+          <span class="chapter-number">02</span>
+          <div>
+            <p class="kicker">Commercial Success</p>
+            <h2>What does success look like?</h2>
+            <p>
+              Box office, production budgets and ratings tell different
+              stories about how Australian films performed.
+            </p>
+          </div>
+        </div>
+
+
+        <article class="visual-full">
+          <div class="visual-copy wide-copy">
+            <span class="visual-number">04</span>
+            <h3>From Era to Genre to Box Office</h3>
+            <p>
+              Follow films from their era, through genre, and into different
+              box-office tiers.
+            </p>
+          </div>
+
+          <div class="visual-card large-card">
+            <div id="vis4" class="visualisation"></div>
+          </div>
+        </article>
+
+
+        <article class="visual-row">
+          <div class="visual-copy">
+            <span class="visual-number">05</span>
+            <h3>Blockbusters and Expensive Misses</h3>
+            <p>
+              Reported production budgets and box-office gross do not always
+              move together.
+            </p>
+          </div>
+
+          <div class="visual-card">
+            <div id="vis5" class="visualisation"></div>
+          </div>
+        </article>
+
+
+        <article class="visual-row">
+          <div class="visual-copy">
+            <span class="visual-number">06</span>
+            <h3>Did Audiences Think the Films Got Better?</h3>
+            <p>
+              Compare the share of low, moderate and highly rated films across
+              decades.
+            </p>
+          </div>
+
+          <div class="visual-card">
+            <div id="vis6" class="visualisation"></div>
+          </div>
+        </article>
+
+
+        <article class="visual-full">
+          <div class="visual-copy wide-copy">
+            <span class="visual-number">07</span>
+            <h3>The Companies Behind Australian Film</h3>
+            <p>
+              Production companies differ in both output and audience
+              reception.
+            </p>
+          </div>
+
+          <div class="visual-card large-card">
+            <div id="vis7" class="visualisation"></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- =======================
+         CHAPTER 3
+    ======================== -->
+    <section class="section dark" id="world">
+      <div class="container">
+
+        <div class="chapter-header">
+          <span class="chapter-number">03</span>
+          <div>
+            <p class="kicker">Australia on the Global Stage</p>
+            <h2>How does Australian cinema connect to the world?</h2>
+            <p>
+              Place Australian cinema in a wider international context through
+              national film output, average ratings and co-production links.
+            </p>
+          </div>
+        </div>
+
+
+        <article class="map-block">
+          <div class="map-copy">
+            <span class="visual-number">08</span>
+            <h3>Number of Films by Country</h3>
+            <p>
+              Film counts represented in the dataset vary substantially
+              between countries.
+            </p>
+          </div>
+
+          <div class="visual-card map-card">
+            <div id="vis8" class="visualisation"></div>
+          </div>
+        </article>
+
+
+        <article class="map-block">
+          <div class="map-copy">
+            <span class="visual-number">09</span>
+            <h3>Average Film Score by Country</h3>
+            <p>
+              Average scores provide another way to compare national film
+              landscapes.
+            </p>
+          </div>
+
+          <div class="visual-card map-card">
+            <div id="vis9" class="visualisation"></div>
+          </div>
+        </article>
+
+
+        <article class="map-block">
+          <div class="map-copy">
+            <span class="visual-number">10</span>
+            <h3>How Australian Cinema Connects to the World</h3>
+            <p>
+              International co-productions connect Australia to a broader
+              global production network.
+            </p>
+          </div>
+
+          <div class="visual-card map-card">
+            <div id="vis10" class="visualisation"></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <section class="sources">
+      <div class="container sources-grid">
+        <div>
+          <p class="kicker">Data & Method</p>
+          <h2>Sources</h2>
+        </div>
+
+        <div>
+          <p>
+            <strong>movies.csv</strong> is used for film history, genres,
+            budget, gross, ratings and production companies.
+          </p>
+          <p>
+            <strong>tmdb_5000_movies.csv</strong> is used for international
+            production-country connections.
+          </p>
+          <p class="note">
+            Counts and financial measures describe records represented in the
+            selected datasets rather than a complete census of all films.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <div class="container footer-inner">
+      <span>FIT3179 Data Visualisation 2</span>
+      <span>Australian Movies</span>
+    </div>
+  </footer>
+
+
+  <!--
+    IMPORTANT:
+    Your files in /js are JSON Vega/Vega-Lite specifications even though
+    they currently use the .js extension.
+
+    Therefore they must NOT be loaded with <script src="...">.
+    This loader reads them as text, parses the JSON, and sends the result
+    to vegaEmbed().
+  -->
+  <script>
+    const visualisations = [
+      ["vis1",  "js/1_A_Cinema_in_Motion.js"],
+      ["vis2",  "js/2_Genres_Rise_Fall_and_Return.js"],
+      ["vis3",  "js/3_Changing_Genres_Changing_Fortunes.js"],
+      ["vis4",  "js/4_From_Era_to_Genre_to_BoxOffice.js"],
+      ["vis5",  "js/5_Blockbusters_and_Expensive_Misses.js"],
+      ["vis6",  "js/6_Did_Audiences_Think_the_Films_Got_Better.js"],
+      ["vis7",  "js/7_The_Companies_Behind_Australian_Fil.js"],
+      ["vis8",  "js/8_Number_of_Films_by_Country.js"],
+      ["vis9",  "js/9_Score_of_Films_by_Country.js"],
+      ["vis10", "js/How Australian CinemaConnects to the World.js"]
+    ];
+
+
+    async function loadVisualisation(targetId, filePath) {
+      const target = document.getElementById(targetId);
+
+      try {
+        target.innerHTML = '<p class="loading-message">Loading visualisation…</p>';
+
+        const response = await fetch(encodeURI(filePath));
+
+        if (!response.ok) {
+          throw new Error(
+            `Could not load ${filePath} (${response.status} ${response.statusText})`
+          );
+        }
+
+        const text = await response.text();
+        const spec = JSON.parse(text);
+
+        target.innerHTML = "";
+
+        await vegaEmbed(`#${targetId}`, spec, {
+          actions: false,
+          renderer: "svg"
+        });
+
+      } catch (error) {
+        console.error(filePath, error);
+
+        target.innerHTML = `
+          <div class="chart-error">
+            <strong>Visualisation could not be loaded.</strong>
+            <span>${filePath}</span>
+            <small>${error.message}</small>
+          </div>
+        `;
+      }
+    }
+
+
+    Promise.all(
+      visualisations.map(([targetId, filePath]) =>
+        loadVisualisation(targetId, filePath)
+      )
+    );
+  </script>
+
+</body>
+</html>
